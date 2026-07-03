@@ -45,10 +45,13 @@ Use for:
 - Strength, flow, obstruction, and transformation.
 - Whether the chart needs support, release, control, or a bridge.
 - Avoiding rigid structure labels.
+- **Image/formation (形象) lens — the fourth analytical perspective.** When a chart's qi concentrates in one or two lines (木火通明, 金水相生, 专旺五格), apply "象不可破": the image must not be broken, even by elements that would normally be useful. See `rules-ditian.md` section 七.
 
-Best question:
+Best questions:
 
 > Is the qi flowing, blocked, too strong, too weak, or fighting?
+>
+> Has the qi concentrated into an image (象)? If so, what would break it?
 
 > 📖 原文：[source-texts/滴天髓阐微.md](source-texts/滴天髓阐微.md) | 📋 规则：[rules/rules-ditian.md](rules/rules-ditian.md)
 

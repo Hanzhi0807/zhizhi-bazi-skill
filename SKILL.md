@@ -67,6 +67,10 @@ Collect the minimum data first:
 3. Sex used by the traditional dayun direction rule: male or female.
 4. Birthplace if available; use it for a true-solar-time caveat rather than exact correction unless you have a reliable longitude source.
 
+> ⚠️ **Two date pitfalls to confirm at intake:**
+> - **Gregorian vs. lunar:** Many Bazi books and family records give lunar dates without labeling them. If the user's date comes from a命理书 or老黄历, **explicitly confirm whether it is Gregorian or lunar** before running the script. A lunar date fed to `calc_bazi.py` as if Gregorian will produce an entirely wrong chart (wrong day master, wrong structure). If only a lunar date is available, do not convert from memory — ask for a trusted conversion or see `edge-cases.md` "Lunar-Only Dates".
+> - **Year range:** `calc_bazi.py` only supports **1900–2100**. Historical figures born before 1900 (common in classical case studies: 朱熹, 王安石, 曾国藩, 左宗棠, 章太炎, 慈禧…) cannot be calculated by the script. For these, ask the user for a pre-computed chart or state that the script cannot verify it.
+
 Optional calibration data:
 
 - Lunar birth date if the Gregorian date is unknown. Do not convert lunar dates from memory; ask for a Gregorian date, a trusted conversion, or state that the chart cannot be reliably calculated.
@@ -102,10 +106,11 @@ Follow this sequence:
 5. Assess day-master strength using command, roots, twelve growth stages (十二长生), support, drain, control, and flow. Read `rules-ditian.md` for strength/flow rules. Read `tables.md` for the twelve growth stage lookup tables.
 6. Identify structure only after strength and season are understood. Read **`classical-texts.md` (子平真诠 section)** for structure rules. Assess clarity vs turbidity (清澈与浑浊): is the structure clean or mixed? Is the useful god protected or damaged? Are there conflicting elements? Read `rules-ziping.md` for structure purity and rescue logic. **Cite the specific 子平真诠 rule for the identified structure. Give three ratings in the conclusion: 格局清纯度初评, 有情有力初评, 成格救应初评 (each 优/良/中/差). The first will be revised after step 7.**
 7. Assess flow and circulation (流转分析): analyze on three layers — **heavenly stem flow** (天干流转: chain of stem interactions), **earthly branch flow** (地支流转: chain of branch interactions including hidden stems, combinations, clashes), and **heaven-earth connection** (天地流转: roots, exposed stems,虚实). Read `rules-ditian.md` and **`classical-texts.md` (滴天髓 section)** for flow and obstruction logic. **Cite the specific 滴天髓 principle. Give a 流转顺畅度评级 (优/良/中/差) in the conclusion, based on whether the flow direction matches the structure's needs.**
-8. **Summarize the comprehensive structure grade (格局综合评价):** collect the five ratings already given in steps 4, 6, and 7; map them to the 九等等级表 in `rules-ziping.md`. Use **《神峰通考》病药说** to summarize: what is the chart's "病" and what does the current dayun provide as "药"? This is a **summary, not a new analysis** — all evidence must have been stated in previous steps.
-9. Read dayun and annual activation as timing, not as isolated fate. Use **《千里命稿》 palace and ten-god logic** to connect dayun to life domains.
-10. Use 《千里命稿》-style palace and event logic to propose 2-4 historical calibration points.
-11. After user feedback, revise strength/useful-god/flow assumptions before giving final advice.
+8. **Assess image/formation (形象分析) — the fourth analytical lens**, alongside strength/regulation/structure. First scan whether the chart's qi is concentrated in one or two elements. If yes (two-line mutual generation like 木火通明/金水相生, or one-line dominance like 曲直/炎上), apply the image lens: the image must not be broken (象不可破) — elements that would normally be useful may become harmful if they break the image. Read `rules-ditian.md` section 七"形象与成象". If the chart's elements are dispersed (3+ lines with normal generation/control), skip this step. **Give a 形象得失评级 (优/良/中/差/不适用).**
+9. **Summarize the comprehensive structure grade (格局综合评价):** collect the five ratings already given in steps 4, 6, and 7 (plus the image rating from step 8 if applicable); map them to the 九等等级表 in `rules-ziping.md`. Use **《神峰通考》病药说** to summarize: what is the chart's "病" and what does the current dayun provide as "药"? This is a **summary, not a new analysis** — all evidence must have been stated in previous steps.
+10. Read dayun and annual activation as timing, not as isolated fate. Use **《千里命稿》 palace and ten-god logic** to connect dayun to life domains.
+11. Use 《千里命稿》-style palace and event logic to propose 2-4 historical calibration points.
+12. After user feedback, revise strength/useful-god/flow assumptions before giving final advice.
 
 For the detailed sequence and output format, read `references/analysis-protocol.md`.
 

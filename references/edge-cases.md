@@ -1,5 +1,13 @@
 # Edge Cases
 
+## ⚠️ Date Intake Checklist (check before calculating)
+
+Two traps cause silent total-chart errors. Check both at intake, before running `calc_bazi.py`:
+
+1. **Gregorian vs. lunar.** `calc_bazi.py` expects a **Gregorian** date. If the user's date comes from a命理书、老黄历、族谱, or any Chinese-language source that might use lunar/夏历 dates, **confirm the calendar explicitly**. A lunar date fed in as Gregorian shifts the day master and entire structure — the reading will be confidently wrong. Lunar-only dates cannot be converted from memory; see "Lunar-Only Dates" below.
+
+2. **Year range 1900–2100.** The script's solar-term approximation only covers 1900–2100. Births before 1900 (most classical case studies and many late-Qing/early-ROC figures) will error out. For these, ask for a pre-computed chart or a trusted calendar output; do not approximate.
+
 ## Late Zi Hour
 
 This skill uses the early/late Zi convention:
