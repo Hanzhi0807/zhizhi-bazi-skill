@@ -1,0 +1,27 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">知之八字技能</title>
+  <desc id="desc">用于四柱八字排盘、多书互证和历史校准的智能体技能。</desc>
+  <rect width="1200" height="420" fill="#101820"/>
+  <path d="M0 330 C160 255 250 385 400 310 C560 230 650 125 815 180 C965 230 1035 115 1200 82 L1200 420 L0 420 Z" fill="#D7B56D" opacity="0.18"/>
+  <path d="M0 125 C120 180 230 92 365 132 C515 176 575 260 735 220 C905 176 1000 250 1200 205" stroke="#D7B56D" stroke-width="3" opacity="0.55"/>
+  <circle cx="970" cy="110" r="58" fill="#D7B56D" opacity="0.22"/>
+  <circle cx="970" cy="110" r="36" stroke="#D7B56D" stroke-width="3" opacity="0.85"/>
+  <g opacity="0.26" stroke="#F4E8C1" stroke-width="1">
+    <path d="M80 80 H430"/>
+    <path d="M80 130 H520"/>
+    <path d="M80 180 H470"/>
+    <path d="M80 230 H560"/>
+  </g>
+  <text x="86" y="120" fill="#F7F3E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">知之八字技能</text>
+  <text x="90" y="178" fill="#D7B56D" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">四柱八字 · 排盘计算 · 多书互证 · 智能体技能</text>
+  <text x="90" y="242" fill="#F7F3E8" opacity="0.88" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">先算清命盘事实，再做谨慎校准的命理分析。</text>
+  <text x="90" y="290" fill="#B8C7C0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20">排盘计算 · 十神藏干 · 大运流年 · 多书互证 · 安全表达</text>
+  <g transform="translate(90 330)">
+    <rect width="150" height="42" rx="21" fill="#F7F3E8" opacity="0.1"/>
+    <text x="24" y="28" fill="#F7F3E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">技能入口</text>
+    <rect x="170" width="168" height="42" rx="21" fill="#F7F3E8" opacity="0.1"/>
+    <text x="194" y="28" fill="#F7F3E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">排盘脚本</text>
+    <rect x="358" width="188" height="42" rx="21" fill="#F7F3E8" opacity="0.1"/>
+    <text x="382" y="28" fill="#F7F3E8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">经典互证</text>
+  </g>
+</svg>

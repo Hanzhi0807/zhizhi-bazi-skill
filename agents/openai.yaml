@@ -1,0 +1,4 @@
+interface:
+  display_name: "知之八字技能"
+  short_description: "四柱八字排盘与多书互证分析"
+  default_prompt: "使用 $zhizhi-bazi-skill 收集出生信息、计算八字命盘，并结合多本命理经典进行校准分析。"
