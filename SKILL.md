@@ -1,8 +1,8 @@
 ---
 name: zhizhi-bazi-skill
-description: Classical Chinese Bazi skill for 四柱八字排盘、命理分析、运势/大运/流年解读、千里命稿风格断事校准, and culturally framed fortune-telling requests. Use when the user asks to 算八字、看八字、批八字、排四柱、分析命盘、看大运流年、用千里命稿分析、or wants a Bazi birth chart interpreted with multiple classical references and cautious uncertainty handling.
+description: Classical Chinese Bazi skill for 四柱八字排盘、命理分析、运势/大运/流年解读、千里命稿风格断事校准、夫妻合参, and culturally framed fortune-telling requests. Use when the user asks to 算八字、看八字、批八字、排四柱、分析命盘、看大运流年、用千里命稿分析、夫妻合参/合婚/两人命盘对照、or wants a Bazi birth chart interpreted with multiple classical references and cautious uncertainty handling.
 created: 2026-06-16T22:50
-updated: 2026-07-03T12:00
+updated: 2026-07-03T18:00
 ---
 
 # Zhizhi Bazi Skill
@@ -112,6 +112,17 @@ Follow this sequence:
 10. Read dayun and annual activation as timing, not as isolated fate. Use **《千里命稿》 palace and ten-god logic** to connect dayun to life domains.
 11. Use 《千里命稿》-style palace and event logic to propose 2-4 historical calibration points.
 12. After user feedback, revise strength/useful-god/flow assumptions before giving final advice.
+
+### 夫妻合参（当用户提供两人命造并说明是夫妻/伴侣关系时触发）
+
+当用户给出两人的出生信息并说明是夫妻/伴侣（或要求合婚/合参/两人命盘对照）时，**必须执行 `analysis-protocol.md` Step 7.5 夫妻合参七步流程**：
+
+1. **前置条件**：先完成两人各自的全套分析（Step 1-7，含 Step 4.0 三段式校验），不可跳过各自格局直接合参
+2. **合参七步**：五行互补 → 日主关系 → 地支互动（含夫妻宫交叉）→ 天干互动（含天干五合）→ 六亲星宫交叉 → 大运同步性 → 综合判断+共同建议
+3. **核心工具**：六亲星宫交叉（教程补充规则 `rules-tutorial-sync.md` 第八节）+ 天干五合 + 地支合冲刑害 + 大运同步对照
+4. **输出**：按合参输出模板（见 `analysis-protocol.md`）结构化输出，优势/挑战/总评/共同建议分列
+5. **化解之道**：遇到冲克用通关五行化解（如子午冲用木通关），给具体可操作建议
+6. **不做绝对断语**：不断"必离/必合"，只说"缘分底子+磨合难度+转机节点"
 
 For the detailed sequence and output format, read `references/analysis-protocol.md`.
 
