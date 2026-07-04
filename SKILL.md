@@ -2,7 +2,7 @@
 name: zhizhi-bazi-skill
 description: Classical Chinese Bazi skill for 四柱八字排盘、命理分析、运势/大运/流年解读、千里命稿风格断事校准, and culturally framed fortune-telling requests. Use when the user asks to 算八字、看八字、批八字、排四柱、分析命盘、看大运流年、用千里命稿分析、or wants a Bazi birth chart interpreted with multiple classical references and cautious uncertainty handling.
 created: 2026-06-16T22:50
-updated: 2026-07-03T00:00
+updated: 2026-07-03T12:00
 ---
 
 # Zhizhi Bazi Skill
@@ -48,13 +48,14 @@ Read only the files needed for the task.
 |:---|:---|:---|
 | Step 2: Season & Regulation | `references/rules/rules-qiongtong.md` | Day-master × month 调候用神 lookup table |
 | Step 3: Strength & Flow | `references/rules/rules-ditian.md` | Strength/weakness judgment, flow, 通关, 寒暖燥湿 |
-| Step 4: Structure & Useful Gods | `references/rules/rules-ziping.md` | 用神成败救应, 格局纯杂高低, 相神, 清澈浑浊判断 |
+| Step 4: Structure & Useful Gods | `references/rules/rules-ziping.md` | 用神成败救应, 格局纯杂高低, 相神, 清澈浑浊判断, 透干变格速查表 |
 | Step 5: Flow & Circulation | `references/rules/rules-ditian.md` | 通关, 流转, 寒暖燥湿, 气势流通 |
 | Step 6: Event Calibration | `references/rules/rules-qianli.md` | Palace positions, 十神事件映射, 历史校准方法 |
 | All steps (foundation) | `references/rules/rules-yuanhai.md` | Ten gods table, 六亲配法, 基础格局速查 |
 | Error checking | `references/rules/rules-shenfeng.md` | 病药说, 辟谬, 反机械判断清单 |
 | Special structures | `references/rules/rules-sanming.md` | 特殊格局 (从格/化气格), 神煞速查, 纳音表 |
 | Auxiliary (nayin) | `references/rules/rules-lantai.md` | 纳音特殊格局 (lowest priority) |
+| **Tutorial supplements** | `references/rules/rules-tutorial-sync.md` | 暗拱虚神, 母慈灭子, 根印区别, 墓库区分, 反生反克, 大运五类型, 官杀五型, 六亲星宫交叉 (from 陆致极教程) |
 
 **Reading priority for L1 rules**: Always read `rules-yuanhai.md` for foundation. Read the rule file matching your current analysis step. Others on demand.
 

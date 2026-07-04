@@ -16,6 +16,7 @@ This file defines the reasoning workflow. It keeps the agent from acting like a 
 8. Read `classical-lenses.md` before selecting useful gods or resolving conflicts.
 9. Read `qianli-method.md` before making event-style judgments.
 10. Read `safety-tone.md` before discussing wealth, marriage, children, death, or major decisions.
+11. Read `rules-tutorial-sync.md` when encountering: 半合缺帝旺(暗拱虚神)、印过旺(母慈灭子)、墓库(墓vs库)、五行过旺(反生反克)、大运干支结构(盖头截脚)、官杀格(五型归类)、六亲(星宫交叉)。
 
 ## Reasoning Order
 
