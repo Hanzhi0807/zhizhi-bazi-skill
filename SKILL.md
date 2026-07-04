@@ -2,7 +2,7 @@
 name: zhizhi-bazi-skill
 description: Classical Chinese Bazi skill for 四柱八字排盘、命理分析、运势/大运/流年解读、千里命稿风格断事校准、夫妻合参, and culturally framed fortune-telling requests. Use when the user asks to 算八字、看八字、批八字、排四柱、分析命盘、看大运流年、用千里命稿分析、夫妻合参/合婚/两人命盘对照、or wants a Bazi birth chart interpreted with multiple classical references and cautious uncertainty handling.
 created: 2026-06-16T22:50
-updated: 2026-07-03T18:00
+updated: 2026-07-03T20:00
 ---
 
 # Zhizhi Bazi Skill
@@ -112,6 +112,7 @@ Follow this sequence:
 10. Read dayun and annual activation as timing, not as isolated fate. Use **《千里命稿》 palace and ten-god logic** to connect dayun to life domains.
 11. Use 《千里命稿》-style palace and event logic to propose 2-4 historical calibration points.
 12. After user feedback, revise strength/useful-god/flow assumptions before giving final advice.
+13. **完整分析末尾追加"整体白话解读"（普通话总结）**：一句话画像 + 性格天赋 + 人生轨迹关键阶段 + 现实功课 + 三个关键词，600-1000 字。**只翻译前面已论证的判断，不新增命理结论**（见 `analysis-protocol.md` Step 9 与 Anti-Pattern #8）。简短问答不追加，夫妻合参不追加（合参有自己的总评）。
 
 ### 夫妻合参（当用户提供两人命造并说明是夫妻/伴侣关系时触发）
 
